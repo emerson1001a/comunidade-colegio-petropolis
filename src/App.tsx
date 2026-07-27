@@ -137,7 +137,7 @@ export default function Home() {
             <section className="hero">
               <div>
                 <div className="eyebrow">DOMINGO, 26 DE JULHO</div>
-                <h2>Olá, Emerson.<br /><em>Como a comunidade pode ajudar?</em></h2>
+                <h2>Olá, Ricardo.<br /><em>Como a comunidade pode ajudar?</em></h2>
                 <div className="hero-search">
                   <span>⌕</span>
                   <input aria-label="Pesquisar profissionais" placeholder="Ex.: dentista, arquiteto, professor particular..." value={query} onChange={e => setQuery(e.target.value)} onKeyDown={e => e.key === "Enter" && runSearch()} />
@@ -319,7 +319,7 @@ export default function Home() {
             <header><div className="wa-avatar">P</div><div><b>Assistente Petrópolis</b><small>● online • respostas da comunidade</small></div><button onClick={()=>setWhatsapp(false)}>×</button></header>
             <div className="wa-chat">
               <div className="wa-date">HOJE</div>
-              <div className="wa-message bot">Olá, Emerson! Sou o assistente da Comunidade Petrópolis. O que você procura hoje?<time>15:42</time></div>
+              <div className="wa-message bot">Olá, Ricardo! Sou o assistente da Comunidade Petrópolis. O que você procura hoje?<time>15:42</time></div>
               {waStep >= 1 && <div className="wa-message user">Dentista<time>15:43 ✓✓</time></div>}
               {waStep >= 2 && <><div className="wa-message bot">Encontrei profissionais verificados. Você tem preferência de especialidade ou horário?<time>15:43</time></div><div className="wa-options"><button onClick={()=>setWaStep(3)}>Odontopediatria</button><button onClick={()=>setWaStep(3)}>Ortodontia</button><button onClick={()=>setWaStep(3)}>Qualquer especialidade</button></div></>}
               {waStep >= 3 && <div className="wa-message bot result-message"><b>Estas são as melhores opções:</b><span>1. Dra. Ana Martins • ★ 4,9<br/>Disponível hoje, 16h</span><span>2. Dr. Rafael Costa • ★ 4,8<br/>Disponível amanhã, 9h</span><small>Resultados baseados em categoria, disponibilidade e avaliações confirmadas.</small><time>15:44</time></div>}
